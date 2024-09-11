@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Sofia:wght@500&display=swap" rel="stylesheet">
+    <title>Imagem no Cabeçalho</title>
+    <style>
+        /* Estilo para o cabeçalho */
+        header {
+            background-color: #000;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            color: #fefefe;
+        }
+
+        /* Estilo para título */
+        h1 {
+            font-family: 'Sofia', sans-serif; 
+            font-size: 3rem;
+            font-weight: 500;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
+
+
+        h2 {
+            font-family: 'Sofia', sans-serif; 
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: start;
+            width: 100%;
+            margin: 0;
+        }
+
+        /* Estilo para o contêiner da imagem e texto à direita */
+        .right-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+            /* Espaçamento entre imagem e o texto */
+            .right-container img {
+                margin-right: 20px; 
+                border-radius: 90%; 
+            }
+
+            /* Configuração conteiner */
+            .right-container span {
+                font-family: 'Sofia', sans-serif; 
+                font-size: 2rem;
+                font-weight: 470; 
+                color: #fefefe; 
+            }
+
+        /* Estilo para a tHeaders */
+        th {
+            font-size: 24px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        /* Borda do Botão formulário */
+        fieldset {
+            border: 1px solid #000000; 
+            padding: 15px;
+            border-radius: 5px;
+            width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        /* Estilo para mexer imagem, descrição e preço */
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Container é a junção de imagem, descrição e produto */
+        .product-container {
+            width: 250px;
+            margin: 10px;
+        }
+
+            /* Imagem do conteiner*/
+            .product-container img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Descrição do conteiner */
+            .product-info {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+            }
+
+            /* Centraliza texto */
+            .product-info p {
+                margin: 0;
+                font-size: 1rem;
+                overflow-wrap: break-word;
+                text-align: center;
+            }
+
+        /* Tudo dentro do formulário 2 */
+        .price-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+            .price {
+                margin-left: 10px;
+                font-size: 1.5rem;
+                font-weight: bold; /* negrito */
+                font-family: Arial, sans-serif; /* Fonte padrão */
+            }
+
+            .price.one {
+                color: #e74c3c; 
+                font-size: 1.8rem;
+            }
+
+        .centered-text {
+            text-align: center; /* Centraliza o texto */
+            margin-top: 20px; 
+        }
+
+            .centered-text p {
+                font-family: 'Sofia', sans-serif;
+                font-size: 1.8rem; 
+                color: #000000; 
+                margin: 0; 
+            }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #000;
+            padding: 45px;
+            color: #fefefe;
+        }
+
+            /* Cnteúdo do rodapé */
+            .footer-content {
+                display: flex;
+                justify-content: space-between; 
+                align-items: center; 
+            }
+
+            /* Estilo para contato */
+            .contact-info {
+                font-family: 'Sofia', sans-serif;
+                font-size: 2.0rem;
+                color: #fefefe;
+                text-align: left; /* Esquerda */
+            }
+
+            /* Tamanho imagem do rodapé */
+            .footer-image {
+                width: 170px; 
+                height: auto;
+                border-radius: 10px; 
+            }
+
+        .product-fieldset {
+            background-color: #cdffd8; 
+            padding: 10px; /* Espaçamento interno */
+            border: 1.5px solid #000; 
+            width: 116%; 
+            box-sizing: border-box; 
+        }
+
+
+        /* Justifica o texto do preço com a descrição */
+        .price-container {
+            justify-content: start; /* Alinhamento à esquerda */
+            width: 100%; /* Largura total */
+            margin-top: 0; 
+        }
+
+        .product-info p {
+            margin-bottom: 10px; /* Espaço abaixo da descrição */
+        }
+
+        /* CSS do botão prosseguir */
+        a.button {
+            display: inline-block;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #FFFFFF; /* Cor do texto */
+            background-color: black; /* Cor de fundo */
+            text-decoration: none; 
+            border-radius: 30px;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            }
+
+            /* Cor quando o mouse passa por cima */
+            a.button:hover {
+                background-color: #CC0000; 
+                }
+
+            /* Centraliza o botão no meio da tela */
+            .button-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <!--Header -->
+        <header>
+            <h1><b>Produtos</b></h1>
+
+            <div class="right-container">
+                <img src="imagens/logoPerfil.jpg" alt="Logo do perfil" width="100"> 
+
+                <span>Perfil</span> 
+
+            </div>
+
+        </header>
+
+        <thead>
+            <tr>
+
+                <th bgcolor="#cdffd8" width="1000">
+                    
+                    <a href="sobreNos.html" style="text-decoration: none; color: inherit;">Sobre Nós</a>
+
+                </th>
+
+                <th bgcolor="#cdffd8" width="1000">
+                    <a href="tela2_servico.html" style="text-decoration: none; color: inherit;">Serviços</a>
+                </th>
+
+                <th bgcolor="#cdffd8" width="1000">
+                    <a href="#contato" style="text-decoration: none; color: inherit;">Contato</a>
+                </th>
+
+            </tr>
+
+        </thead>
+
+    </table>
+
+    <br></br>
+
+    <!--Main-->
+    <main>
+
+    <form action="...(1)..." method="post">
+        <fieldset>
+
+            <legend> Filtrar por: </legend>
+            
+            <p> Selecione o Tipo de Ração Desejada:
+
+            <select name="produto" style="padding: 5px; width: 150px;">
+
+                <option value="seca"> Seca </option> 
+                <option value="umida"> Úmida </option> 
+
+            </select>     
+            <input type="button" value="Confirmar" style="margin-left: 10px;">
+
+            </p>
+
+            <p> Tipo de animal:
+            <select name="animal" style="padding: 5px; width: 150px;"> 
+
+                <option value="pequeno"> Pequeno Porte </option> 
+                <option value="grande"> Grande Porte </option> 
+
+            </select>  
+            <input type="button" value="Confirmar" style="margin-left: 10px;">
+
+            </p>
+        </fieldset>
+
+    </form>
+
+    <div class="main-container">
+
+        <!-- Primeiro conteiner -->
+        <div class="product-container">
+
+            <img src="imagens/racao1.jpg" alt="Imagem do produto">
+            <div class="product-info">
+
+                <p>Ração para cachorro totalmente lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,</p>
+
+                <fieldset class="product-fieldset">
+
+                <div class="price-container">
+                    <div>Preço Total: </div>
+                    <div class="price one">100,00 R$</div>
+                </div>
+
+                </fieldset>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+    <p></p>
+
+        <p>
+            <div class="button-container">
+                <a href="tela4_produtos.html" class="button">Confirmar</a>
+            </div>        
+        </p>        
+
+    <p></p>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2><b>(51)0000-0000</b></h2>
+                <p>Rua Porto Alegre</p>
+            </div>
+            <img src="imagens/mapa.jpg" alt="Mapa do Brasil" class="footer-image">
+        </div>
+    </footer>
+
+</body>
+</html>

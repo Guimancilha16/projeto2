@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Sofia:wght@500&display=swap" rel="stylesheet"> <!-- Link correto para a fonte -->
+    <title>Imagem no Cabeçalho</title>
+    <style>
+        /* Estilo para o cabeçalho */
+        header {
+            background-color: #000; /* Fundo preto */
+            padding: 10px; /* Espaço ao redor do cabeçalho */
+            display: flex; /* alinha as duas imagens */
+            align-items: center; /* Coloca imagens no centro */
+            color: #fefefe; /* Cor do texto */
+        }
+
+        /* Estilo para o <h1> */
+        h1 {
+            font-family: 'Sofia', sans-serif; 
+            font-size: 3rem;
+            font-weight: 500;
+            margin: 0; /* Remove a margem padrão */
+            margin-left: 10px; /* Espaçamento entre a imagem e o texto */
+        }
+
+        /* Estilo para o <h1> */
+        h2 {
+            font-family: '', sans-serif; 
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 0; /* Remove a margem padrão */
+            margin-left: 10px; /* Espaçamento entre a imagem e o texto */
+        }
+
+        /* Estilo para o contêiner da imagem e texto à direita */
+        .right-container {
+            display: flex; /* Usar flexbox para layout */
+            align-items: center; /* Alinha os itens no centro */
+            margin-left: auto; /* Empurra o contêiner para a direita */
+        }
+
+        /* Espaçamento entre imagem e o texto */
+        .right-container img {
+            margin-right: 20px; 
+            border-radius: 90%; 
+        }
+
+        /* Configuração Perfil */
+        .right-container span {
+            font-family: 'Sofia', sans-serif; 
+            font-size: 2rem;
+            font-weight: 470; 
+            color: #fefefe; 
+        }
+
+        /* Estilo para a THeaders */
+        th {
+            font-size: 24px; /* Tamanho */
+            border: 2px solid black; /* Borda preta */
+            padding: 10px; /* Espaçamento quadrado */
+        }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #000;
+            padding: 45px;
+            color: #fefefe;
+        }
+
+            /* Cnteúdo do rodapé */
+            .footer-content {
+                display: flex;
+                justify-content: space-between; 
+                align-items: center; 
+            }
+
+            /* Estilo para contato */
+            .contact-info {
+                font-family: 'Sofia', sans-serif;
+                font-size: 2.0rem;
+                color: #fefefe;
+                text-align: left; /* Esquerda */
+            }
+
+            /* Tamanho imagem do rodapé */
+            .footer-image {
+                width: 170px; 
+                height: auto;
+                border-radius: 10px; /* Ajuste para o arredondamento desejado */
+            }
+
+    </style>
+</head>
+
+
+<body>
+    <table>
+
+        <header>
+            <img src="imagens/logoCachorro.jpg" alt="Logo da Loja" width="100"> 
+            
+            <h1><i>PetShop</i></h1>
+
+            <div class="right-container">
+                <img src="imagens/logoPerfil.jpg"
+                    alt="Logo do perfil" width="100"> 
+
+                <span>Perfil</span> 
+            </div>
+
+        </header>
+
+        <thead>
+            <tr>
+
+                <th bgcolor="#cdffd8" width="1000">
+                    
+                    <a href="sobreNos.html" style="text-decoration: none; color: inherit;">Sobre Nós</a>
+
+                </th>
+
+                <th bgcolor="#cdffd8" width="1000">
+                    <a href="#contato" style="text-decoration: none; color: inherit;">Contato</a>
+                </th>
+
+            </tr>
+        </thead>
+
+    </table>
+
+    <blockquote><h2> <b>Área Desejada: </b></h2></blockquote>
+    <br></br>
+
+    <blockquote style="text-align: center;">
+
+        <a href="tela2_comercial.html">
+
+            <img src="imagens/racaoPrincipal.jpg" alt="Imagem do Produto" width="400">
+
+        </a>
+
+        <p style="font-size: 24px;">Produto</p>
+
+        <br></br>
+
+        <a href="tela2_servico.html">
+
+            <img src="imagens/servicoPrincipal.jpg" alt="Imagem do Produto" width="400">
+
+        </a>
+
+        <p style="font-size: 24px;">Serviços</p>
+
+    </blockquote>
+    
+</body>
+
+<footer id="contato">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h2><b>(51)0000-0000</b></h2>
+            <p>Rua Porto Alegre</p>
+        </div>
+        <img src="imagens/mapa.jpg" alt="Mapa do Brasil" class="footer-image">
+    </div>
+</footer>
+
+</html>
